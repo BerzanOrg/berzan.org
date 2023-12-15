@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center min-h-screen gap-12 px-6 pt-16 pb-6 text-neutral-950 bg-gradient-to-tl from-yellow-300/90 to-yellow-200/90">
             <header className="flex flex-col items-center gap-6">
-                <Image src='/berzan.jpg' alt="Berzan" width={171} height={171} className="border rounded-full pointer-events-none select-none border-neutral-950" />
+                <Image src='/myself.jpg' alt="Berzan" width={171} height={171} className="border rounded-full pointer-events-none select-none border-neutral-950" />
                 <div className="flex flex-col gap-1.5 text-center">
                     <h1 className="text-6xl font-bold"> I'm Berzan. </h1>
                     <p className="text-lg font-medium "> I love building tools & sharing information.</p>
