@@ -8,7 +8,7 @@ interface FooterLink {
 
 export default function FooterLink({ name, content, href }: FooterLink) {
     return (
-        <p>
+        <p className="text-lg">
             <span className="font-bold">{name}</span>: <Link className="underline hover:text-neutral-400" href={href}>{content}</Link>
         </p>
     )
