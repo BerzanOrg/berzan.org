@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
-import { FormEvent, useEffect, useState } from "react";
+import Link from "next/link";
+import { useState } from "react";
 
 
 function toBigint(str: string): bigint {
@@ -56,14 +57,10 @@ const useStarknet = () => {
                 ];
                 console.log(calldata)
 
-                console.log('start')
-                const { contract_address } = await account.deployContract({
+                await account.deployContract({
                     classHash: '0x06630fb37348de1310b11632fcb54b1762a47a2bcf010b14b6e483a00e951303',
                     constructorCalldata: calldata,
                 })
-                console.log('done')
-
-                return `https://testnet.starkscan.co/token/${contract_address}`
             } catch (error) {
                 if (error.message === 'User abort') return
                 console.error(error)
@@ -78,13 +75,13 @@ export default function Home() {
     const { address, connect, deployTokenContract } = useStarknet()
 
     return (
-        <div className="flex flex-col gap-6 pb-24">
+        <div className="flex flex-col flex-1 gap-6">
             <header className="flex items-center justify-end w-full h-24 max-w-6xl gap-6 pr-6">
 
             </header>
-            <main className="flex flex-col items-center w-full gap-8">
-                <h1 className="text-4xl font-bold leading-tight text-center">Berzan's Starknet Token Creator Tool</h1>
-                <form className="flex flex-col w-full max-w-sm gap-6" onSubmit={async (e) => {
+            <main className="flex flex-col items-center flex-1 w-full gap-6">
+                <h1 className="text-5xl font-bold leading-[1.125] text-center">Berzan's <br />Starknet Token Creator Tool</h1>
+                <form className="flex flex-col w-full max-w-sm gap-4" onSubmit={async (e) => {
                     e.preventDefault()
                     const formData = new FormData(e.currentTarget)
 
@@ -103,19 +100,13 @@ export default function Home() {
                         return
                     }
 
-                    const tokenUrl = await deployTokenContract({
+                    e.currentTarget.reset()
+
+                    await deployTokenContract({
                         name,
                         symbol,
                         supply,
                     })
-                    console.log('hey')
-
-                    if (!tokenUrl) return
-
-                    e.currentTarget.reset()
-
-                    console.log(tokenUrl)
-                    window.open(tokenUrl, '_blank')
                 }}>
                     <Input
                         name="NAME"
@@ -154,7 +145,30 @@ export default function Home() {
                         <Button type="button" onClick={connect}>Connect Wallet</Button>
                     )}
                 </form>
+                <div className="flex flex-col text-center  text-sm font-medium text-neutral-600 gap-0.5 select-none">
+                    <p>
+                        1 - Visit Starkscan after you create your token.
+                    </p>
+                    <p>
+                        2 -  Find the deployed contract address.
+                    </p>
+                    <p>
+                        3 - Add the token in your wallet.
+                    </p>
+                </div>
             </main>
+            <footer className="flex flex-col gap-4 py-8 text-center">
+                <div className="flex flex-col text-sm text-neutral-600 gap-0.5 font-medium">
+                    <p className="select-none">You can donate me some of your tokens if you want :)</p>
+                    <p className="text-[0.6rem]">0x01f351ad804a7a600c4a96974c37c5a59c5febae383af6a96336c7634c73fdaf</p>
+
+                </div>
+                <p className="text-sm font-semibold">
+                    Source Code:
+                    &nbsp;
+                    <Link className="font-medium text-yellow-800 underline" href='https://github.com/BerzanOrg/berzan.org/blob/main/others/starknet-token/src/lib.cairo'>https://github.com</Link>
+                </p>
+            </footer>
         </div>
     )
 }
