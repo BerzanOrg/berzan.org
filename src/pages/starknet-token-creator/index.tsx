@@ -58,7 +58,7 @@ const useStarknet = () => {
 
                 console.log('start')
                 const { contract_address } = await account.deployContract({
-                    classHash: '0x05ff0d8ca63781c053f8653978f83ee0379711f65237d194ae9c0c84631240ad',
+                    classHash: '0x06630fb37348de1310b11632fcb54b1762a47a2bcf010b14b6e483a00e951303',
                     constructorCalldata: calldata,
                 })
                 console.log('done')
