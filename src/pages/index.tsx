@@ -20,6 +20,7 @@ export default function Home() {
                     <ul className="flex flex-col gap-5">
                         <RouteLink href="/mina-blog" name="Mina Blog" />
                         <RouteLink href="/solana-blog" name="Solana Blog" />
+                        <RouteLink href="/starknet-token-creator" name="Starknet Token Creator" />
                     </ul>
                 </nav>
             </main>
