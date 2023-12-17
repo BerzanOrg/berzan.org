@@ -5,3 +5,13 @@
 #__next {
     @apply flex flex-col w-full max-w-6xl min-h-screen;
 }
+
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+    }
+ }
