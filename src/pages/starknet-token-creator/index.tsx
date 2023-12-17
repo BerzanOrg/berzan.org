@@ -79,7 +79,7 @@ export default function Home() {
             <header className="flex items-center justify-end w-full h-24 max-w-6xl gap-6 pr-6">
 
             </header>
-            <main className="flex flex-col items-center flex-1 w-full gap-6">
+            <main className="flex flex-col items-center flex-1 w-full gap-6 px-4">
                 <h1 className="text-5xl font-bold leading-[1.125] text-center">Berzan's <br />Starknet Token Creator Tool</h1>
                 <form className="flex flex-col w-full max-w-sm gap-4" onSubmit={async (e) => {
                     e.preventDefault()
@@ -160,7 +160,7 @@ export default function Home() {
             <footer className="flex flex-col gap-4 py-8 text-center">
                 <div className="flex flex-col text-sm text-neutral-600 gap-0.5 font-medium">
                     <p className="select-none">You can donate me some of your tokens if you want :)</p>
-                    <p className="text-[0.6rem]">0x01f351ad804a7a600c4a96974c37c5a59c5febae383af6a96336c7634c73fdaf</p>
+                    <p className="text-[0.575rem]">0x01f351ad804a7a600c4a96974c37c5a59c5febae383af6a96336c7634c73fdaf</p>
 
                 </div>
                 <p className="text-sm font-semibold">
