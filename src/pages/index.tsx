@@ -11,7 +11,7 @@ export default function Home() {
                 <IconGithub />
             </header>
             <main className="flex flex-col items-center w-full gap-6">
-                <Image src='/myself.jpg' alt="Berzan" width={171} height={171} className="border rounded-full pointer-events-none select-none border-neutral-950" />
+                <Image src='/myself.jpg' alt="Berzan" priority width={171} height={171} className="border rounded-full pointer-events-none select-none border-neutral-950" />
                 <div className="flex flex-col gap-1.5 text-center px-4">
                     <h1 className="text-6xl font-bold"> I'm Berzan. </h1>
                     <p className="font-bold text-l "> I love building tools & sharing information. </p>
