@@ -80,7 +80,7 @@ export default function Home() {
 
             </header>
             <main className="flex flex-col items-center flex-1 w-full gap-6 px-4">
-                <h1 className="text-5xl font-bold leading-[1.125] text-center">Berzan's <br />Starknet Token Creator Tool</h1>
+                <h1 className="text-4xl font-bold leading-[1.125] text-center">Berzan's <br />Starknet Token Creator Tool</h1>
                 <form className="flex flex-col w-full max-w-sm gap-4" onSubmit={async (e) => {
                     e.preventDefault()
                     const formData = new FormData(e.currentTarget)
