@@ -6,7 +6,8 @@
         "vscode": {
             "extensions": [
                 "bradlc.vscode-tailwindcss",
-                "heybourn.headwind"
+                "heybourn.headwind",
+                "tamasfe.even-better-toml"
             ]
         }
     }
