@@ -161,8 +161,10 @@
 	<div>
 		<p>
 			<span class="font-bold">Note:</span>
-			<a href="https://github.com/BerzanOrg/starknet-token-contract" class="hover:underline"
-				>The smart contract is open-source.</a
+			<a
+				href="https://github.com/BerzanOrg/starknet-token-contract"
+				target="_blank"
+				class="hover:underline">The smart contract is open-source.</a
 			>
 		</p>
 	</div>
