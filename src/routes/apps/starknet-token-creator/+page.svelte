@@ -97,6 +97,23 @@
 
 <svelte:head>
 	<title>Berzan's Starknet Token Creator</title>
+	<meta name="description" content="Berzan's tool to create your own tokens on Starknet." />
+	<meta name="keywords" content="berzan, starknet, token, token creator" />
+	<meta property="og:title" content="Berzan's Starknet Token Creator" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://berzan.org/apps/starknet-token-creator" />
+	<meta property="og:image" content="https://berzan.org/og-starknet-token-creator.jpg" />
+	<meta property="og:image:width" content="864" />
+	<meta property="og:image:height" content="864" />
+	<meta property="og:site_name" content="Berzan's Website" />
+	<meta property="og:description" content="Berzan's tool to create your own tokens on Starknet." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BerzanOrg" />
+	<meta name="twitter:creator" content="@BerzanOrg" />
+	<meta name="twitter:title" content="Berzan's Starknet Token Creator" />
+	<meta name="twitter:url" content="https://berzan.org/apps/starknet-token-creator" />
+	<meta name="twitter:description" content="Berzan's tool to create your own tokens on Starknet." />
+	<meta name="twitter:image:src" content="https://berzan.org/og-starknet-token-creator.jpg" />
 </svelte:head>
 
 <header

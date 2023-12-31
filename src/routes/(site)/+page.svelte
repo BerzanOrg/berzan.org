@@ -1,5 +1,22 @@
 <svelte:head>
 	<title>Berzan's Homepage</title>
+	<meta name="description" content="My personal space on internet." />
+	<meta name="keywords" content="berzan, developer, web3" />
+	<meta property="og:title" content="Berzan's Homepage" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://berzan.org" />
+	<meta property="og:image" content="https://berzan.org/og-homepage.jpg" />
+	<meta property="og:image:width" content="864" />
+	<meta property="og:image:height" content="864" />
+	<meta property="og:site_name" content="Berzan's Website" />
+	<meta property="og:description" content="My personal space on internet." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@BerzanOrg" />
+	<meta name="twitter:creator" content="@BerzanOrg" />
+	<meta name="twitter:title" content="Berzan's Homepage" />
+	<meta name="twitter:url" content="https://berzan.org" />
+	<meta name="twitter:description" content="My personal space on internet." />
+	<meta name="twitter:image:src" content="https://berzan.org/og-homepage.jpg" />
 </svelte:head>
 
 <main
