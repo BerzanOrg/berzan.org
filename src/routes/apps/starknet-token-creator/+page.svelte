@@ -115,59 +115,61 @@
 	</button>
 </header>
 
-<main class="flex flex-1 flex-col items-center gap-8 px-4 md:px-8">
-	<div class="flex flex-col items-center gap-4">
-		<h1 class="text-4xl font-bold sm:text-5xl">Starknet Token Creator</h1>
-		<form class="flex w-full max-w-xs flex-col gap-4" onsubmit={createToken}>
-			<input
-				class="h-10 rounded-full border border-neutral-300 bg-white px-5 outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
-				name="token-name"
-				maxlength="31"
-				type="text"
-				required
-				placeholder="Name (Bitcoin)"
-				bind:value={tokenName}
-			/>
-			<input
-				class="h-10 rounded-full border border-neutral-300 bg-white px-5 uppercase outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
-				name="token-symbol"
-				maxlength="31"
-				type="text"
-				required
-				placeholder="Symbol (BTC)"
-				bind:value={tokenSymbol}
-			/>
-			<input
-				class="h-10 rounded-full border border-neutral-300 bg-white px-5 outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
-				name="token-supply"
-				maxlength="31"
-				type="number"
-				required
-				placeholder="Supply (21000000)"
-				bind:value={tokenSupply}
-			/>
-			<button
-				class="h-10 rounded-full bg-cyan-500/80 px-7 font-bold text-white duration-200 hover:bg-cyan-500/60 disabled:cursor-not-allowed disabled:hover:bg-cyan-500/80"
-				disabled={!address}
-				type="submit">Create</button
-			>
-		</form>
-	</div>
-	<div class="flex flex-col items-center">
-		<p>1 - Visit Starkscan after you create a token.</p>
-		<p>2 - Find contract deployment address.</p>
-		<p>3 - Add the token in your wallet.</p>
-	</div>
-	<div>
-		<p>
-			<span class="font-bold">Note:</span>
-			<a
-				href="https://github.com/BerzanOrg/starknet-token-contract"
-				target="_blank"
-				class="hover:underline">The smart contract is open-source.</a
-			>
-		</p>
-	</div>
+<main class="flex flex-1 flex-col items-center justify-center py-32 sm:py-36 md:py-48 lg:py-56">
+	<section class="flex flex-col items-center gap-8 px-4 md:px-8">
+		<div class="flex flex-col items-center gap-4">
+			<h1 class="text-4xl font-bold sm:text-5xl">Starknet Token Creator</h1>
+			<form class="flex w-full max-w-xs flex-col gap-4" onsubmit={createToken}>
+				<input
+					class="h-10 rounded-full border border-neutral-300 bg-white px-5 outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
+					name="token-name"
+					maxlength="31"
+					type="text"
+					required
+					placeholder="Name (Bitcoin)"
+					bind:value={tokenName}
+				/>
+				<input
+					class="h-10 rounded-full border border-neutral-300 bg-white px-5 uppercase outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
+					name="token-symbol"
+					maxlength="31"
+					type="text"
+					required
+					placeholder="Symbol (BTC)"
+					bind:value={tokenSymbol}
+				/>
+				<input
+					class="h-10 rounded-full border border-neutral-300 bg-white px-5 outline-none placeholder:text-neutral-300 hover:border-neutral-400 focus:border-neutral-400"
+					name="token-supply"
+					maxlength="31"
+					type="number"
+					required
+					placeholder="Supply (21000000)"
+					bind:value={tokenSupply}
+				/>
+				<button
+					class="h-10 rounded-full bg-cyan-500/80 px-7 font-bold text-white duration-200 hover:bg-cyan-500/60 disabled:cursor-not-allowed disabled:hover:bg-cyan-500/80"
+					disabled={!address}
+					type="submit">Create</button
+				>
+			</form>
+		</div>
+		<div class="flex flex-col items-center">
+			<p>1 - Visit Starkscan after you create a token.</p>
+			<p>2 - Find contract deployment address.</p>
+			<p>3 - Add the token in your wallet.</p>
+		</div>
+		<div>
+			<p>
+				<span class="font-bold">Note:</span>
+				<a
+					href="https://github.com/BerzanOrg/starknet-token-contract"
+					target="_blank"
+					class="hover:underline">The smart contract is open-source.</a
+				>
+			</p>
+		</div>
+	</section>
 </main>
 
 <style>
