@@ -3,11 +3,11 @@
 </svelte:head>
 
 <main
-	class="flex flex-1 flex-col items-center gap-32 pb-32 sm:gap-36 sm:pb-36 md:gap-48 md:pb-48 lg:gap-56 lg:pb-56"
+	class="flex flex-1 flex-col items-center gap-24 pb-24 sm:gap-28 sm:pb-28 md:gap-32 md:pb-32 lg:gap-36 lg:pb-36"
 >
 	<section class="w-full px-4 pt-2 md:px-8">
 		<div
-			class="flex h-160 flex-col items-center justify-center rounded-2xl bg-[url('/palm-trees.webp')] bg-cover bg-center text-white md:h-180 md:rounded-3xl xl:h-200"
+			class="flex h-140 flex-col items-center justify-center rounded-2xl bg-[url('/palm-trees.webp')] bg-cover bg-center text-white md:h-180 md:rounded-3xl xl:h-200"
 		>
 			<h1 class="text-center text-6xl font-bold sm:text-7xl md:text-8xl">I'm Berzan.</h1>
 		</div>

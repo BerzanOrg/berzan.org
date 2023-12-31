@@ -115,7 +115,7 @@
 	</button>
 </header>
 
-<main class="flex flex-1 flex-col items-center justify-center py-32 sm:py-36 md:py-48 lg:py-56">
+<main class="flex flex-1 flex-col items-center justify-center py-24 sm:py-28 md:py-32 lg:py-36">
 	<section class="flex flex-col items-center gap-8 px-4 md:px-8">
 		<div class="flex flex-col items-center gap-4">
 			<h1 class="text-4xl font-bold sm:text-5xl">Starknet Token Creator</h1>
