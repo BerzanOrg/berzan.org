@@ -24,7 +24,6 @@
 			<div class="flex flex-col">
 				<p class="text-lg font-bold">Website</p>
 				<a href="/" class="hover:underline" id="reach-me">Homepage</a>
-				<a href="/apps" class="hover:underline" id="reach-me">Apps</a>
 				<a href="/blog" class="hover:underline" id="reach-me">Blog</a>
 			</div>
 			<div class="flex flex-col">
