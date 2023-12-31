@@ -18,7 +18,7 @@
 
 <footer class="flex justify-center py-20 pb-10">
 	<div
-		class="flex w-full max-w-6xl flex-col gap-6 px-4 md:flex-row-reverse md:items-end md:justify-between md:px-8"
+		class="flex w-full max-w-6xl flex-col gap-14 px-4 md:flex-row-reverse md:items-end md:justify-between md:px-8"
 	>
 		<div class="flex flex-col gap-4 md:flex-row md:gap-8">
 			<div class="flex flex-col">
@@ -41,6 +41,6 @@
 				<a href="mailto:me@berzan.org" class="hover:underline" id="reach-me">Reach Me</a>
 			</div>
 		</div>
-		<p>© Berzan</p>
+		<p class="font-medium">© Berzan | 2024</p>
 	</div>
 </footer>
