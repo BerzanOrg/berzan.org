@@ -105,11 +105,7 @@
 	<meta property="og:image" content="https://berzan.org/og-starknet-token-creator.jpg" />
 	<meta property="og:image:width" content="864" />
 	<meta property="og:image:height" content="864" />
-	<meta property="og:site_name" content="Berzan's Website" />
 	<meta property="og:description" content="Berzan's tool to create your own tokens on Starknet." />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@BerzanOrg" />
-	<meta name="twitter:creator" content="@BerzanOrg" />
 	<meta name="twitter:title" content="Berzan's Starknet Token Creator" />
 	<meta name="twitter:url" content="https://berzan.org/apps/starknet-token-creator" />
 	<meta name="twitter:description" content="Berzan's tool to create your own tokens on Starknet." />
@@ -117,7 +113,7 @@
 </svelte:head>
 
 <header
-	class="sticky top-0 flex h-18 items-center justify-between bg-yellow-50/80 px-4 backdrop-blur-md md:px-8"
+	class="sticky top-0 z-30 flex h-18 items-center justify-between bg-yellow-50/80 px-4 backdrop-blur-md md:px-8"
 >
 	<a href="/" class="text-3xl font-bold text-cyan-500/80">Berzan</a>
 	<button

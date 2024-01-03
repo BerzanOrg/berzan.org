@@ -1,5 +1,5 @@
 <header
-	class="sticky top-0 flex h-18 items-center justify-between bg-yellow-50/80 px-4 backdrop-blur-md md:px-8"
+	class="sticky top-0 z-30 flex h-18 items-center justify-between bg-yellow-50/80 px-4 backdrop-blur-md md:px-8"
 >
 	<a href="/" class="text-3xl font-bold text-cyan-500/80">Berzan</a>
 	<a
