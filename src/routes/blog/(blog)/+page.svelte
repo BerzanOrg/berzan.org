@@ -12,7 +12,7 @@
 	<section
 		class="flex w-full max-w-6xl flex-col items-center gap-5 px-4 pt-2 sm:gap-6 md:gap-8 md:px-8 lg:gap-6"
 	>
-		<h1 class="text-center text-6xl font-bold sm:text-7xl md:text-8xl">Berzan's Blog</h1>
+		<h1 class="w-full text-center text-6xl font-bold sm:text-7xl md:text-8xl">Berzan's Blog</h1>
 		<ol
 			class="grid w-full max-w-md grid-cols-1 gap-14 sm:max-w-lg sm:gap-16 md:max-w-xl md:gap-20 lg:max-w-none lg:grid-cols-2 lg:gap-x-8 lg:gap-y-14"
 		>

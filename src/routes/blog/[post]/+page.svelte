@@ -22,12 +22,14 @@
 </svelte:head>
 
 <main class="flex flex-1 flex-col items-center gap-4">
-	<article class="flex w-full max-w-6xl flex-col px-4 pt-2 text-center md:px-8">
-		<div>
-			<h1 class="text-4xl font-bold">{data.title}</h1>
-			<p>{data.fmtDate}</p>
-			<img alt="blog post {data.no}" src="/{data.no}.jpg" class="rounded-2xl" />
+	<article class="flex w-full max-w-6xl flex-col gap-2 px-4 pt-2 text-center md:px-8">
+		<div class="flex flex-col">
+			<h1 class="text-4xl font-bold sm:text-5xl md:text-6xl">{data.title}</h1>
+			<p class="text-sm sm:text-base md:text-lg">{data.fmtDate}</p>
 		</div>
-		{data.markdown}
+		<img alt="blog post {data.no}" src="/{data.no}.jpg" class="rounded-2xl md:rounded-3xl" />
+		<div class="flex flex-col">
+			{data.markdown}
+		</div>
 	</article>
 </main>
